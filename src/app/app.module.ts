@@ -15,9 +15,12 @@ import { NotesComponent } from './notes/notes.component';
 import { BgmusicComponent } from './bgmusic/bgmusic.component';
 import { SetalarmComponent } from './setalarm/setalarm.component';
 import { LoginComponent } from './login/login.component';
-import { MatDialogModule } from "@angular/material/dialog";
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
 import { PopupComponent } from './popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotesandvidComponent } from './notesandvid/notesandvid.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -29,7 +32,8 @@ firebase.initializeApp(environment.firebaseConfig);
     BgmusicComponent,
     SetalarmComponent,
     LoginComponent,
-    PopupComponent
+    PopupComponent,
+    NotesandvidComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ firebase.initializeApp(environment.firebaseConfig);
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
-    MatDialogModule, BrowserAnimationsModule
+    MatDialogModule, BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,12 +4,17 @@ import { BgmusicComponent } from './bgmusic/bgmusic.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NotesComponent } from './notes/notes.component';
+import { NotesandvidComponent } from './notesandvid/notesandvid.component';
 import { PopupComponent } from './popup/popup.component';
 import { SetalarmComponent } from './setalarm/setalarm.component';
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'notesandvid',
+    component: NotesandvidComponent
   },
   {
     path: 'notes',

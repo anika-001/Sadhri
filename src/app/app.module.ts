@@ -9,15 +9,27 @@ import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireAuthModule } from "@angular/fire/auth"
-import {AngularFireStorageModule } from "@angular/fire/storage"
-import firebase from 'firebase/app';;
+import { AngularFireStorageModule } from "@angular/fire/storage"
+import firebase from 'firebase/app';
+import { NotesComponent } from './notes/notes.component';
+import { BgmusicComponent } from './bgmusic/bgmusic.component';
+import { SetalarmComponent } from './setalarm/setalarm.component';
+import { LoginComponent } from './login/login.component';
+import { MatDialogModule } from "@angular/material/dialog";
+import { PopupComponent } from './popup/popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 firebase.initializeApp(environment.firebaseConfig);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NotesComponent,
+    BgmusicComponent,
+    SetalarmComponent,
+    LoginComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +37,8 @@ firebase.initializeApp(environment.firebaseConfig);
     AngularFireModule.initializeApp(environment.firebaseConfig, 'sadhri'),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    MatDialogModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

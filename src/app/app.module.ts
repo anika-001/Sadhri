@@ -21,6 +21,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { PopupComponent } from './popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotesandvidComponent } from './notesandvid/notesandvid.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -33,7 +34,8 @@ firebase.initializeApp(environment.firebaseConfig);
     SetalarmComponent,
     LoginComponent,
     PopupComponent,
-    NotesandvidComponent
+    NotesandvidComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<nav class="navbar">
+    <div class="logo" routerLink="/home">SADHRI</div>
+    <div class="links">
+        <div class="nav-bar-item" routerLink={{y.link}} *ngFor="let y of navdata">
+            <div class="nav-bar-item-text">{{y.name}}</div>
+        </div>
+    </div>
+</nav>

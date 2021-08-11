@@ -22,6 +22,12 @@ import { PopupComponent } from './popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotesandvidComponent } from './notesandvid/notesandvid.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { StudyroomComponent } from './studyroom/studyroom.component';
+import { BeachComponent } from './beach/beach.component';
+import { ForestComponent } from './forest/forest.component';
+import { CalmroomComponent } from './calmroom/calmroom.component';
+import { MallroomComponent } from './mallroom/mallroom.component';
+import { HouseComponent } from './house/house.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -35,7 +41,13 @@ firebase.initializeApp(environment.firebaseConfig);
     LoginComponent,
     PopupComponent,
     NotesandvidComponent,
-    NavbarComponent
+    NavbarComponent,
+    StudyroomComponent,
+    BeachComponent,
+    ForestComponent,
+    CalmroomComponent,
+    MallroomComponent,
+    HouseComponent
   ],
   imports: [
     BrowserModule,

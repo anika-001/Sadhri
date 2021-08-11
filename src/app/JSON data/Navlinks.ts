@@ -12,7 +12,7 @@ export let navbar = [
     {
         // "role":"user",
         "name":"Home",
-        "link":"/home",
+        "link":"",
     }
     // {
     //     // "role":"user",

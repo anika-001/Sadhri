@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+
+import { PopupComponent } from './popup/popup.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sadhri';
+
+  constructor(private dialogRef: MatDialog) { }
+  //function to call popup
+  openDialog() {
+    this.dialogRef.open(PopupComponent);
+  }
+  // openDialog() {
+  //   const dialogRef = this.dialogRef.open(PopupComponent);
+
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log(`Dialog result: ${result}`);
+  //   });
+  // }
 }
+
+

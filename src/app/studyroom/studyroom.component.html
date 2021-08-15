@@ -1,0 +1,11 @@
+<div class="main">
+    <div class="start">
+        <audio autoplay loop src="./../../assets/Audios/saferoombg.mp3"></audio>
+
+        <div class="boxes">
+            <div class="box" *ngFor="let x of studydata" routerLink={{x.link}}>{{x.name}}</div>
+        </div>
+
+    </div>
+
+</div>

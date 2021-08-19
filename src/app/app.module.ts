@@ -17,6 +17,7 @@ import { SetalarmComponent } from './setalarm/setalarm.component';
 import { LoginComponent } from './login/login.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 import { PopupComponent } from './popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

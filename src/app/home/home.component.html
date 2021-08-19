@@ -8,16 +8,34 @@
         <div class="startright"></div>
         <img src="../../assets/images/flower.png">
     </div>
-    <div class="shortcuts">
-        
+    <div class="shortcut">
+        <button class="icon" (click)="addpopup = true">
+            <img src="../../assets/images/add.png" height="25px">
+        </button>
+        <!-- <a style = "border: solid wheat thick; cursor: pointer; z-index: 1000;" href="https://www.w3schools.com">Visit W3Schools.com!</a> -->
+        <!-- <a href="https://www.youtube.com/watch?v=eC-SPy6Qw2I&list=OLAK5uy_nDEzo6CJctW-TBlr8RAe5MlWWZzyTm8Wo&index=20">hey</a> -->
+        <div *ngFor="let y of shortcuts" style="cursor: pointer; z-index: 1000;">
+            <a href= {{y.payload.doc.data().Link}} target="blank">
+                <img src={{y.payload.doc.data().Logo}} height="25px">
+            </a>
+        </div>
+        <div class="form" *ngIf="addpopup">
+            <form [formGroup]="formlinks">
+                <div class="close" (click)="addpopup = false">
+                    <img src="../../assets/images/add.png" height="25px">
+                </div>
+                <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link">
+                <button (click)="addlinks()">Add</button>
+            </form>
+        </div>
     </div>
-    <div class="about">
+    <div class="about" >
         <h1>ABOUT</h1>
         <div class="aboutleft"></div>
         <div class="aboutright">
-        <br> 
+            <br>
 
-        <div class="text">
+            <div class="text">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make
@@ -39,20 +57,20 @@
                     typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
                     Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum.
-                   
+
             </div>
-       
+
         </div>
     </div>
 </div>
 
-    <!-- <div class="homecontent">
+<!-- <div class="homecontent">
             <h1>Start Learning.....</h1>
             <a href="#" class="btn btn-lg btn-light">Discover Features</a> &nbsp;
             <a href="#" class="btn btn-lg btn-primary">Make Your own notes</a> -->
-    <!-- <a {click}="openDialog()" href="#" class="btn btn-lg btn-primary">LOGIN</a> -->
-    <!-- </div> -->
-    <!-- <form>
+<!-- <a {click}="openDialog()" href="#" class="btn btn-lg btn-primary">LOGIN</a> -->
+<!-- </div> -->
+<!-- <form>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -68,7 +86,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form> -->
-    <!-- <div class="container features">
+<!-- <div class="container features">
             <div class="row">
 
                 <div class="card" style="width: 20rem;height: 25rem;">

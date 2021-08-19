@@ -33,6 +33,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { NgAuthService } from '../app/ng-auth.service';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -62,7 +63,7 @@ firebase.initializeApp(environment.firebaseConfig);
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig, 'sadhri'),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
@@ -70,7 +71,7 @@ firebase.initializeApp(environment.firebaseConfig);
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [NgAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

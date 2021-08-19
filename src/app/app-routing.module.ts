@@ -18,6 +18,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { StudyroomComponent } from './studyroom/studyroom.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AuthGuard } from "./auth.guard"
+import { DigitalclockComponent } from './digitalclock/digitalclock.component';
 const routes: Routes = [
   
   // {
@@ -37,6 +38,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+
+  },
+  {
+    path: 'digitalclock',
+    component: DigitalclockComponent,
 
   },
   {

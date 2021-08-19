@@ -5,7 +5,7 @@
             <div class="nav-bar-item-text">{{y.name}}</div>
         </div>
         <div>
-            <a class="btn btn-block btn-primary" (click)="ngAuthService.SignOut()" style="margin-bottom: 10px;background-color:yellowgreen;border: none;">
+            <a *ngIf="userIsLogged" class="btn btn-block btn-primary" (click)="ngAuthService.SignOut()" style="margin-bottom: 10px;background-color:yellowgreen;border: none;">
                 Sign Out
               </a>
         </div>

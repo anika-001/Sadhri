@@ -6,7 +6,7 @@
             <form [formGroup]="story" class="enterstory">
                 <form [formGroup]="formnote">
                     <textarea placeholder="Type your notes" formControlName="note" type="text"
-                        class="typetext"></textarea>
+                        class="typetext" ></textarea>
                 </form>
                 <button class="button" (click)="savenote()">
                     <span class="button__text">
@@ -62,7 +62,7 @@
         <div class="embed">
             <div class="videnter">
                 <form [formGroup]="formvids">
-                    <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link" >
+                    <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link"  >
                     <!-- [(ngModel)]="links"> -->
                     <button type="button" (click)="btnClick();">Add</button>
                 </form>

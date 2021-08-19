@@ -1,35 +1,37 @@
 <div class="displayTable">
+  <div class="main" style="background: url('https://media.giphy.com/media/djR6hGcZxt9m/source.gif');"></div>
   <div class="displayTableCell">
 
     <div class="authBlock">
-      <h3>Signin</h3>
+      <h3><img src="../../assets/images/sign-in.png" height="80px"></h3>
       <div class="formGroup">
-        <input type="text" class="form-control" placeholder="Username" #userName required>
+        <input style="background: transparent;" type="text" class="form-control" placeholder="Username" #userName required>
       </div>
 
       <div class="formGroup">
-        <input type="password" class="form-control" placeholder="Password" #userPassword required>
+        <input style="background: transparent;" type="password" class="form-control" placeholder="Password" #userPassword required>
       </div>
 
       <div class="formGroup">
-        <input type="button" class="btn btn-primary btn-block" value="Sign in"
+        <input type="button" class="btn btn-primary btn-block btn-1" value="Sign in"
           (click)="ngAuthService.SignIn(userName.value, userPassword.value)">
       </div>
 
       <div class="formGroup">
-        <button type="button" class="btn btn-danger btn-block" (click)="ngAuthService.GoogleAuth()">
+        <button type="button"  class="btn btn-danger btn-block btn-2" (click)="ngAuthService.GoogleAuth()">
           Log in with Google
         </button>
       </div>
 
       <div class="forgotPassword">
-        <span routerLink="/forgot-password">Forgot Password?</span>
+        <button><span class="btn btn-3" routerLink="/forgot-password" (click)="ngAuthService.ForgotPassword(userName.value)">Forgot Password?</span></button>
       </div>
     </div>
 
     <div class="redirectToLogin">
-      <span>Not registered yet?<span class="redirect" routerLink="/sign-up"> Register</span></span>
+      <button> <span class="btn btn-4">Not registered yet?<span class="redirect" (click)="navigateToRegister()"> Register</span></span></button>
     </div>
 
   </div>
+  
 </div>

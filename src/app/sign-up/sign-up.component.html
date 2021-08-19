@@ -1,4 +1,6 @@
 <div class="displayTable">
+  <div class="main" style="background: url('https://media.giphy.com/media/xThtawJ5higNRr1pq8/source.gif');" autoplay></div>
+ 
   <div class="displayTableCell">
 
     <div class="authBlock">
@@ -12,20 +14,20 @@
         <input type="password" class="form-control" placeholder="Password" #userPwd required>
       </div>
 
-      <div class="formGroup">
-        <input type="button" class="btn btn-block btn-primary" value="Sign Up"
+      <div class="formGroup ">
+        <input type="button" class="btn btn-block btn-primary btn-1" value="Sign Up"
           (click)="ngAuthService.SignUp(userEmail.value, userPwd.value)">
       </div>
 
-      <div class="formGroup">
-        <button type="button" class="btn btn-block btn-danger" (click)="ngAuthService.GoogleAuth()">
+      <div class="formGroup ">
+        <button type="button" class="btn btn-block btn-danger btn-2" (click)="ngAuthService.GoogleAuth()">
           Continue with Google
         </button>
       </div>
     </div>
 
     <div class="redirectToLogin">
-      <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+      <button type="button" class="btn btn-block btn-danger btn-3">   <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span></button>
     </div>
   </div>
 

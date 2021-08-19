@@ -34,9 +34,8 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
-    pathMatch: 'full'
 
   },
   {

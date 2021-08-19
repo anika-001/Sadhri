@@ -62,14 +62,15 @@
         <div class="embed">
             <div class="videnter">
                 <form [formGroup]="formvids">
-                    <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link" [(ngModel)]="links">
+                    <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link" >
+                    <!-- [(ngModel)]="links"> -->
                     <button type="button" (click)="btnClick();">Add</button>
                 </form>
 
             </div>
             <!-- <h1>{{links}}</h1> -->
-            <div *ngFor="let x of videos">
-                <object style="width: 300; height: 225; float: none; clear: both; margin: 2px auto;" [data]=x.payload.doc.data().Links
+            <div *ngFor="let x of video">
+                <object style="width: 300; height: 225; float: none; clear: both; margin: 2px auto;" [data]='x.link'
                     class="vidbox">
                 </object>
             </div>

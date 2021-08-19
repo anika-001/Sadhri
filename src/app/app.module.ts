@@ -35,6 +35,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { NgAuthService } from '../app/ng-auth.service';
+import { DigitalclockComponent } from './digitalclock/digitalclock.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -59,7 +60,8 @@ firebase.initializeApp(environment.firebaseConfig);
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    DigitalclockComponent
   ],
   imports: [
     BrowserModule,

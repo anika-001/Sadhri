@@ -19,14 +19,7 @@ import { StudyroomComponent } from './studyroom/studyroom.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AuthGuard } from "./auth.guard"
 const routes: Routes = [
-  {
-    path: 'dashboard', component: DashboardComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: '', redirectTo: '/sign-in',
-    pathMatch: 'full'
-  },
+  
   { path: 'sign-in', component: SignInComponent },
 
   { path: 'register-user', component: SignUpComponent },

@@ -15,8 +15,8 @@
         <!-- <a style = "border: solid wheat thick; cursor: pointer; z-index: 1000;" href="https://www.w3schools.com">Visit W3Schools.com!</a> -->
         <!-- <a href="https://www.youtube.com/watch?v=eC-SPy6Qw2I&list=OLAK5uy_nDEzo6CJctW-TBlr8RAe5MlWWZzyTm8Wo&index=20">hey</a> -->
         <div *ngFor="let y of shortcuts" style="cursor: pointer; z-index: 1000;">
-            <a href= "{{y.payload.doc.data().Links}}" target="blank">
-              <img src={{y.payload.doc.data().Logo}} height="25px"> 
+            <a href="{{y.payload.doc.data().Links}}" target="blank">
+                <img src={{y.payload.doc.data().Logo}} height="25px">
             </a>
         </div>
         <div class="form" *ngIf="addpopup">
@@ -29,103 +29,88 @@
             </form>
         </div>
     </div>
-    <div class="about" >
+    <div class="about">
         <h1>ABOUT</h1>
         <div class="aboutleft"></div>
         <div class="aboutright">
             <br>
 
             <div class="text">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make
-                    a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make
-                    a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make
-                    a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                <p>Our project is contingent on productivity. It is an all-in-one workplace where you can write, plan,
+                    and get organized. This extension will make your work easier by accessing it on the same page. This
+                    extension will allow you to clip all or parts of web pages. It is an application that provides
+                    components such as notes, calendars, a Digital clock, background music, a to-do list, shortcut
+                    icons, and reminders.Being able to do all these things using only one app is a dream come true. It
+                    has an awesome feature where you can block other things that distract you during your productivity
+                    period.
+                    <br>
+                <h4>Inspiration:</h4>
+                In this current scenario, students have been facing many issues regarding managing their notes and being
+                productive throughout the day. SO, we came up with an idea of making a productivity extension this can
+                be integrated into the curriculum and impact the learning of all students. Many different features can
+                help them out. This extension will increase one’s productivity and will help them to achieve their goals
+                better.
 
             </div>
 
         </div>
     </div>
+
 </div>
-
-<!-- <div class="homecontent">
-            <h1>Start Learning.....</h1>
-            <a href="#" class="btn btn-lg btn-light">Discover Features</a> &nbsp;
-            <a href="#" class="btn btn-lg btn-primary">Make Your own notes</a> -->
-<!-- <a {click}="openDialog()" href="#" class="btn btn-lg btn-primary">LOGIN</a> -->
-<!-- </div> -->
-<!-- <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form> -->
-<!-- <div class="container features">
-            <div class="row">
-
-                <div class="card" style="width: 20rem;height: 25rem;">
-                    <img src="../../assets/background.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 20rem;height: 25rem;">
-                    <img src="../../assets/background.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12">
-
-                </div>
+<div style="height:'100vh'">
+    <div class="card-group">
+        <div class="card">
+            <img src="../../assets/images/productive.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Highly Productive</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text">
             </div>
-    <div class="about">
-        <div class="section-container">
-            <h1>About</h1>
-            <p>We exist to help you expand your human potential. By increasing access to science-backed therapies,
-                we're transforming lives today to transform the world tomorrow.</p>
+        </div>
+
+        <div class="card">
+            <img src="../../assets/images/multitasking.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                </p>
+                <p class="card-text">
+            </div>
+        </div>
+        <div class="card">
+            <img src="../../assets/images/organised.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">
+            </div>
         </div>
     </div>
 </div>
+<!-- <div style="height:'50vh'"> -->
+<div class="card-group">
+    <div class="card" style="margin: 20vh 0vw 20vh 20vw">
+        <img src="../../assets/images/shortcut.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text">
+        </div>
+    </div>
 
-
-<div class="section-container">
-    <h1>About</h1>
-    <p>We exist to help you expand your human potential. By increasing access to science-backed therapies,
-        we're transforming lives today to transform the world tomorrow.</p>
-</div> -->
+    <div class="card" style="margin: 20vh 10vw 20vh 10vw">
+        <img src="../../assets/images/calm.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+            </p>
+            <p class="card-text">
+        </div>
+    </div>
+</div>

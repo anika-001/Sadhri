@@ -4,9 +4,11 @@
     <div class="middle">
         <div class="notes">
             <form [formGroup]="story" class="enterstory">
-                <textarea placeholder="Type your notes" formControlName="content" type="text"
-                    class="typetext"></textarea>
-                <button class="button">
+                <form [formGroup]="formnote">
+                    <textarea placeholder="Type your notes" formControlName="note" type="text"
+                        class="typetext"></textarea>
+                </form>
+                <button class="button" (click)="savenote()">
                     <span class="button__text">
                         <span>S</span><span>a</span>v</span><span>
                     </span><span>e</span>
@@ -59,13 +61,15 @@
         </div>
         <div class="embed">
             <div class="videnter">
-                <p> <input type="text" id="links" name="Links" placeholder="Add Link" [(ngModel)]="links">
+                <form [formGroup]="formvids">
+                    <input type="text" id="links" name="Links" placeholder="Add Link" formControlName="link" [(ngModel)]="links">
                     <button type="button" (click)="btnClick();">Add</button>
-                </p>
+                </form>
+
             </div>
             <!-- <h1>{{links}}</h1> -->
-            <div *ngFor="let x of vidlinks">
-                <object style="width: 300; height: 225; float: none; clear: both; margin: 2px auto;" [data]='x.link'
+            <div *ngFor="let x of videos">
+                <object style="width: 300; height: 225; float: none; clear: both; margin: 2px auto;" [data]=x.payload.doc.data().Links
                     class="vidbox">
                 </object>
             </div>

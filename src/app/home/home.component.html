@@ -15,7 +15,7 @@
         <!-- <a style = "border: solid wheat thick; cursor: pointer; z-index: 1000;" href="https://www.w3schools.com">Visit W3Schools.com!</a> -->
         <!-- <a href="https://www.youtube.com/watch?v=eC-SPy6Qw2I&list=OLAK5uy_nDEzo6CJctW-TBlr8RAe5MlWWZzyTm8Wo&index=20">hey</a> -->
         <div *ngFor="let y of shortcuts" style="cursor: pointer; z-index: 1000;">
-            <a href= {{y.payload.doc.data().Link}} target="blank">
+            <a href= {{y.payload.doc.data().Link}} >
                 <img src={{y.payload.doc.data().Logo}} height="25px">
             </a>
         </div>

@@ -122,4 +122,7 @@ export class NgAuthService {
         this.router.navigate(['sign-in']);
       })
     }  
+    getUserState() {
+      return this.afAuth.authState;
+    }
 }

@@ -20,6 +20,14 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { AuthGuard } from "./auth.guard"
 const routes: Routes = [
   
+  // {
+  //   path: 'dashboard', component: DashboardComponent,
+  //   canActivate: [AuthGuard]
+  // },
+  // {
+  //   path: '', redirectTo: '/sign-in',
+  //   pathMatch: 'full'
+  // },
   { path: 'sign-in', component: SignInComponent },
 
   { path: 'register-user', component: SignUpComponent },
@@ -78,7 +86,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

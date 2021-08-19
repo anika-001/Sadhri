@@ -28,6 +28,11 @@ import { ForestComponent } from './forest/forest.component';
 import { CalmroomComponent } from './calmroom/calmroom.component';
 import { MallroomComponent } from './mallroom/mallroom.component';
 import { HouseComponent } from './house/house.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 firebase.initializeApp(environment.firebaseConfig);
 
@@ -47,7 +52,12 @@ firebase.initializeApp(environment.firebaseConfig);
     ForestComponent,
     CalmroomComponent,
     MallroomComponent,
-    HouseComponent
+    HouseComponent,
+    DashboardComponent,
+    SignInComponent,
+    SignUpComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
